@@ -19,7 +19,7 @@ class Post(models.Model):
     )
     tag = models.ForeignKey(
         Tag,
-        null = False,
+        null = True,
         on_delete = models.CASCADE,
     )
 
