@@ -10,7 +10,9 @@ class Event(models.Model):
     date = models.DateField(
         auto_now_add= True,
     )
-    eventDate = models.DateField()
+    eventDate = models.DateField(
+        null= True,
+    )
     ubication = models.CharField(
         max_length= 120,
     )
